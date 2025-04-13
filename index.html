@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Medicare+</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="patient/login.php" class="appointment-btn">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="left">
+        <h1>Medicare+ ... Always with you</h1>
+        <p>Your health is our top priority</p>
+      </div>
+      <div class="right">
+        <img src="images/sliderImg2.jpg" alt="Doctors" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Options -->
+  <section class="login-section">
+    <h2>Login As</h2>
+    <div class="login-options">
+      <div class="login-box">
+        <img src="/images/patient.jpeg" alt="Patient">
+        <a href="patient/login.php">Patient Login</a>
+      </div>
+      <div class="login-box">
+        <img src="images/doctor.jpeg" alt="Doctor">
+        <a href="doctor/doctor_login.php">Doctor Login</a>
+      </div>
+      <div class="login-box">
+        <img src="images/admin.jpeg" alt="Admin">
+        <a href="admin/login.html">Admin Login</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / Departments -->
+  <section id="services" class="services-section">
+    <h2>Our Departments</h2>
+    <div class="departments">
+      <div class="department-card">Cardiology</div>
+      <div class="department-card">Neurology</div>
+      <div class="department-card">Pediatrics</div>
+      <div class="department-card">Orthopedics</div>
+      <div class="department-card">Dermatology</div>
+      <div class="department-card">General Surgery</div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="gallery" class="blog-section">
+    <h2>Our Blog</h2>
+    <div class="blog-card">
+      <img src="images/aboutHS.jpg" alt="Medical Blog">
+      <div class="blog-content">
+        <h3>Benefits of Hospital Management System</h3>
+        <p>Committed to our community's health and well-being, we provide world-class, patient-centered medical services. Our mission is to deliver accessible, compassionate, and quality healthcare through a dedicated team and innovative facilities. We strive for excellence and continuous improvement to ensure exceptional care for every individual we serve. Contact us for more information.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="submit_feedback.php" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="email" name="email" placeholder="Your Email" required/>
+      <input type="text" name="mobile" placeholder="Your Mobile Number" required/>
+      <textarea name="message" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Medicare+ | Address: Infocity , Patia , Bhubaneswar, Odisha</p>
+      <p>Developed by Admin | Contact: admin@hms.com | madhusudanjena124@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>
